@@ -13,8 +13,12 @@ const routes = [
     children: [
       { path: "/admin", component: () => import("pages/AdminPage.vue") },
       {
-        path: "/adminusedcar",
-        component: () => import("src/pages/AdminCars.vue"),
+        path: "/sellcar",
+        component: () => import("src/pages/AdminSellCars.vue"),
+      },
+      {
+        path: "/admincardetail",
+        component: () => import("src/pages/AdminCarDetail.vue"),
       },
     ],
   },

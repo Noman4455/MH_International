@@ -6,7 +6,29 @@
         <q-space />
         <div class="text-h4 text-bold">MH International</div>
         <q-space />
-        <div class="q-gutter-x-xl">
+        <div class="row text-center q-gutter-y-xs q-my-auto" align="left">
+          <div>
+            <q-btn
+              color="white"
+              class="full-width"
+              icon="home"
+              flat
+              to="/admin"
+              label="Home"
+            />
+          </div>
+          <div>
+            <q-btn
+              color="white"
+              class="full-width"
+              icon="directions_car"
+              flat
+              to="/sellcar"
+              label="Sell Cars"
+            />
+          </div>
+        </div>
+        <!-- <div class="q-gutter-x-xl">
           <q-btn
             flat
             v-if="drawerRight == false"
@@ -15,10 +37,11 @@
             dense
             icon="menu"
           />
-        </div>
+        </div> -->
       </q-toolbar>
     </q-header>
 
+    <!--
     <q-drawer
       side="right"
       v-model="drawerRight"
@@ -63,7 +86,7 @@
           </div>
         </div>
       </q-scroll-area>
-    </q-drawer>
+    </q-drawer> -->
 
     <q-page-container>
       <router-view />
