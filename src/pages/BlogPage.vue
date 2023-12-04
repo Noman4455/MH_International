@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <div class="text-h1">Admin New Car</div>
+    <div class="text-h1">CAR Page</div>
   </q-page>
 </template>
 

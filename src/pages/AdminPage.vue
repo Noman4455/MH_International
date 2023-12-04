@@ -91,14 +91,18 @@
           <q-separator vertical color="dark" class="q-pa-none" />
 
           <div class="col bg-white q-py-md">
-            <div class="text-subtitle1">$ 20000</div>
+            <div class="text-center" style="margin-top: 45%">
+              <div class="text-subtitle1">$ 20000</div>
+            </div>
           </div>
           <q-separator vertical color="dark" class="q-pa-none" />
 
           <div class="col bg-white q-py-sm">
-            <q-btn icon="info" flat class="q-pa-sm" to="/admincardetail" />
-            <q-btn icon="update" flat class="q-pa-sm" />
-            <q-btn icon="delete" flat class="q-pa-sm" />
+            <div class="text-center" style="margin-top: 45%">
+              <q-btn icon="info" flat class="q-pa-sm" to="/admincardetail" />
+              <q-btn icon="update" flat class="q-pa-sm" />
+              <q-btn icon="delete" flat class="q-pa-sm" />
+            </div>
           </div>
         </div>
         <q-separator class="container q-my-sm q-mx-sm" color="dark" />

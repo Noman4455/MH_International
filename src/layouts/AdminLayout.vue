@@ -24,7 +24,17 @@
               icon="directions_car"
               flat
               to="/sellcar"
-              label="Sell Cars"
+              label="Sell Car"
+            />
+          </div>
+          <div>
+            <q-btn
+              color="white"
+              class="full-width"
+              icon="logout"
+              flat
+              to="/login"
+              label="Logout"
             />
           </div>
         </div>
