@@ -21,7 +21,7 @@
       </div>
     </div>
 
-    <div class="margin bg-white q-py-xl q-mb-xl container rounded-borders">
+    <div class="margin bg-white q-py-xl q-mb-lg container rounded-borders">
       <div class="row flex flex-center q-py-lg">
         <div class="text-h3 text-bold text-center text-primary col-12">
           About
@@ -52,7 +52,7 @@
             model to negotiate confidently and secure a fair deal.
           </div>
         </div>
-        <div class="col-6">
+        <div class="col-6 text-center">
           <div class="q-pa-md">
             <q-img
               src="https://images.unsplash.com/photo-1547038577-da80abbc4f19?q=80&w=1510&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -66,7 +66,7 @@
     </div>
 
     <div class="bg-primary q-py-lg gt-xs">
-      <div class="text-h2 text-center q-pt-xl q-pb-md text-white text-bold">
+      <div class="text-h3 text-center q-pt-xl q-pb-md text-white text-bold">
         How We Do
       </div>
       <div class="row container q-py-xl q-col-gutter-y-md text-center">
@@ -95,24 +95,88 @@
 
     <div class="container q-py-xl">
       <div class="row flex flex-center">
-        <div
-          class="text-h3 text-bold text-center text-primary col-12 q-pt-xl col-12"
-        >
+        <div class="text-h3 text-bold text-center text-primary col-12 q-pt-xl">
           Car Brands
         </div>
         <div class="col-3 q-pt-xs bg-primary"></div>
       </div>
-      <div class="q-py-lg">
-        <div class="row" v-for="item in list" :key="item">
-          <div class="col-2">
+      <div class="q-my-xl">
+        <div class="row q-col-gutter-lg">
+          <div
+            class="col-3 flex flex-center row"
+            v-for="item in list"
+            :key="item"
+          >
             <div
-              class="bg-grey-3 flex flex-center"
+              class="bg-grey-4 flex flex-center col-12"
               style="border-radius: 50%; width: 100px; height: 100px"
             >
               <q-img :src="item.img" height="70px" width="70px" />
             </div>
-            <div class="text-h6 text-primary">{{ item.title }}</div>
+            <div class="text-h6 q-pt-sm text-primary col-12 text-center">
+              {{ item.title }}
+            </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primary q-py-xl">
+      <div class="row container">
+        <div class="col-6 flex flex-center">
+          <div class="text-h3 text-bold text-center text-white col-12">
+            Coming Soon
+          </div>
+
+          <div class="row q-gutter-x-md">
+            <div
+              class="bg-black q-pa-sm row cursor-pointer"
+              style="height: 40px; width: 130px; border-radius: 5px"
+            >
+              <q-img src="~assets/android.png" height="27px" width="22px" />
+              <div
+                class="text-white q-pl-sm"
+                style="margin-top: -5px; font-size: 10px"
+              >
+                <div>GET IT ON</div>
+                <div class="text-subtitle1 text-bold" style="margin-top: -5px">
+                  Google Play
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-black q-pa-sm row cursor-pointer"
+              style="height: 40px; width: 150px; border-radius: 5px"
+            >
+              <q-img src="~assets/apple.png" height="27px" width="22px" />
+              <div
+                class="text-white q-pl-sm"
+                style="margin-top: -5px; font-size: 10px"
+              >
+                <div>DOWNLOAD ON THE</div>
+                <div class="text-subtitle1 text-bold" style="margin-top: -5px">
+                  App Store
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-black q-pa-sm row cursor-pointer"
+              style="height: 40px; width: 140px; border-radius: 5px"
+            >
+              <q-img src="~assets/huawei.png" height="27px" width="22px" />
+              <div
+                class="text-white q-pl-sm"
+                style="margin-top: -5px; font-size: 10px"
+              >
+                <div>EXPLORE IT ON</div>
+                <div class="text-subtitle1 text-bold" style="margin-top: -5px">
+                  App Gallery
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 text-center">
+          <q-img src="~assets/mobile.png" height="auto" width="200px" />
         </div>
       </div>
     </div>
@@ -121,7 +185,22 @@
 
 <script>
 import { ref } from "vue";
-import carImage from "../assets/car.png";
+import car1 from "../assets/alfa.png";
+import car2 from "../assets/audi.png";
+import car3 from "../assets/bmw.png";
+import car4 from "../assets/chevrolt.png";
+import car5 from "../assets/ferrari.png";
+import car6 from "../assets/ford.png";
+import car7 from "../assets/honda.png";
+import car8 from "../assets/hyundai.png";
+import car9 from "../assets/kia.png";
+import car10 from "../assets/lamborghini.png";
+import car11 from "../assets/lexus.png";
+import car12 from "../assets/madza.png";
+import car13 from "../assets/mercedes.png";
+import car14 from "../assets/mitsubishi.png";
+import car15 from "../assets/peugeot.png";
+import car16 from "../assets/porsche.png";
 
 export default {
   name: "IndexPage",
@@ -129,8 +208,68 @@ export default {
     return {
       list: [
         {
-          img: carImage,
+          img: car1,
+          title: "Alfa Romeo",
+        },
+        {
+          img: car2,
+          title: "Audi",
+        },
+        {
+          img: car3,
+          title: "BMW",
+        },
+        {
+          img: car4,
+          title: "Chevrolt",
+        },
+        {
+          img: car5,
+          title: "Ferrari",
+        },
+        {
+          img: car6,
+          title: "Ford",
+        },
+        {
+          img: car7,
           title: "Honda",
+        },
+        {
+          img: car8,
+          title: "Hyundai",
+        },
+        {
+          img: car9,
+          title: "Kia",
+        },
+        {
+          img: car10,
+          title: "Lamborghini",
+        },
+        {
+          img: car11,
+          title: "Lexus",
+        },
+        {
+          img: car12,
+          title: "Mazda",
+        },
+        {
+          img: car13,
+          title: "Mercedes",
+        },
+        {
+          img: car14,
+          title: "Mitsubishi",
+        },
+        {
+          img: car15,
+          title: "Peugeot",
+        },
+        {
+          img: car16,
+          title: "Porsche",
         },
       ],
     };
