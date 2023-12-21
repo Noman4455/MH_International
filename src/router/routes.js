@@ -3,7 +3,14 @@ const routes = [
   {
     path: "/",
     component: () => import("layouts/MainLayout.vue"),
-    children: [{ path: "", component: () => import("pages/IndexPage.vue") }],
+    children: [
+      { path: "/", component: () => import("pages/IndexPage.vue") },
+      { path: "/usecar", component: () => import("pages/UsedCar.vue") },
+      { path: "/newcar", component: () => import("pages/NewCar.vue") },
+      { path: "/video", component: () => import("pages/VideoPage.vue") },
+      { path: "/about", component: () => import("src/pages/AboutPage.vue") },
+      { path: "/contact", component: () => import("pages/ContactPage.vue") },
+    ],
   },
 
   // Admin Layout
