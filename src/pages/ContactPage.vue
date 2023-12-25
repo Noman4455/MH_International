@@ -18,17 +18,21 @@
             </div>
           </div>
           <div class="text-subtitle1">
-            <q-icon name="phone" size="24px" class="q-pr-md" />
+            <q-icon name="fa-brands fa-whatsapp" size="24px" class="q-pr-md" />
             +817048053690
+          </div>
+          <div class="text-subtitle1">
+            <q-icon name="phone" size="24px" class="q-pr-md" />
+            +07048053690
           </div>
           <div class="text-subtitle1">
             <q-icon name="mail" size="24px" class="q-pr-md" />
             contact@mhintjapan.com
           </div>
-          <!-- <div class="text-subtitle1">
-            <q-icon name="tag" size="24px" class="q-pr-md" />
-            541212310900
-          </div> -->
+          <div class="text-subtitle1">
+            <q-icon name="fa-solid fa-fax" size="24px" class="q-pr-md" />
+            +0523073754
+          </div>
         </div>
 
         <form
@@ -60,7 +64,7 @@
             <textarea
               placeholder="Message"
               class="input_style"
-              rows="2"
+              rows="5"
               name="Message"
               required
               style="padding-top: 8px"

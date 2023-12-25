@@ -170,7 +170,7 @@ export default {
 </script>
 
 
-<style lang="scss">
+<style scoped lang="scss">
 .a {
   text-decoration: none;
   color: #4e4945;

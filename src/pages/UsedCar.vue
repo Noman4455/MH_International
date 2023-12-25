@@ -37,25 +37,32 @@
         />
       </div>
     </div>
+
     <div class="container q-py-md q-pr-md">
       <div class="text-h3 text-primary text-center q-pt-md q-pb-xl text-bold">
         Available Cars
       </div>
       <div class="row q-gutter-md">
         <div class="col cursor-pointer" v-for="item in carsList" :key="item">
-          <q-img :src="item.imgUrl" height="180px" />
-          <div class="box">
-            <div class="row q-px-md q-pt-md">
-              <div class="text-h6 text-bold text-primary">{{ item.title }}</div>
-              <q-space />
-              <div class="text-subtitle1">{{ item.price }}</div>
+          <a href="#/cardetail" class="a">
+            <q-img :src="item.imgUrl" height="180px" />
+            <div class="box">
+              <div class="row q-px-md q-pt-md">
+                <div class="text-h6 text-bold text-primary">
+                  {{ item.title }}
+                </div>
+                <q-space />
+                <div class="text-subtitle1">{{ item.price }}</div>
+              </div>
+              <div class="row q-px-md q-pb-md">
+                <div class="text-subtitle1 text-primary">
+                  {{ item.capicity }}
+                </div>
+                <q-space />
+                <div class="text-subtitle1">{{ item.year }}</div>
+              </div>
             </div>
-            <div class="row q-px-md q-pb-md">
-              <div class="text-subtitle1 text-primary">{{ item.capicity }}</div>
-              <q-space />
-              <div class="text-subtitle1">{{ item.year }}</div>
-            </div>
-          </div>
+          </a>
         </div>
       </div>
     </div>
@@ -269,5 +276,9 @@ export default defineComponent({
 }
 .f-info {
   cursor: pointer;
+}
+.a {
+  text-decoration: none;
+  color: #4e4945;
 }
 </style>
