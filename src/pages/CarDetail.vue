@@ -102,7 +102,7 @@
         <div class="row q-col-gutter-x-md q-px-xl q-mx-lg">
           <div class="col q-gutter-y-sm text-primary q-ml-sm">
             <div class="text-h5 q-py-md text-bold">
-              M.H International Co., Ltd.
+              M.H International Co. Ltd.
             </div>
             <div class="row">
               <q-icon name="place" size="24px" class="q-pr-md" />
